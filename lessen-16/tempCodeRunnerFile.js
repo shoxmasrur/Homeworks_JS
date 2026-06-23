@@ -1,1 +1,1 @@
-return text;
+console.log(arrd)
