@@ -1,7 +1,10 @@
-function debounce(time){
-    setTimeout( ()=>{
-        console.log("Belgilangan vaqt o'tdi")
-    }, time*1000)
+function binaryNum(num){
+    const arr = [];
+    while(num){
+       num%2===0 ? arr.unshift(0) : arr.unshift(1)
+       num= Math.floor(num/2)
+    }
+    return Number(arr.join(""))
 }
 
-debounce(3)
+console.log( binaryNum(4) )
