@@ -1,8 +1,13 @@
-const arr = [1,2,4,5];
-try{
-
-    arr[5]=5
-}catch(err){
-    arr[5]=3
+function findIndex(arr, index){
+   try{
+    if(arr[index]){
+        return arr[index]
+    }else{
+        throw new Error("bunday index yoq")
+    }
+   }catch(err){
+     return 20
+   } 
 }
-console.log(arr)
+
+console.log(findIndex([1,2,3,4], ))
